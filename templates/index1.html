@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<h1>AAT</h1>
+<h2>Robot Controls</h2>
+<h3> Unripe</h3>
+<br>
+<a href=\A><button>forward</button></a>
+<a href=\a><button>backward</button></a><br/>
+<a href=\B><button>left</button></a>
+<a href=\b><button>right</button></a><br/>
+<a href=\C><button>stop</button></a><br/>
+<a href=\d><button>bottomservo left</button></a>
+<a href=\e><button>bottomservo right</button></a><br/>
+<a href=\f><button>firsthand left</button></a>
+<a href=\g><button>firsthand right</button></a><br/>
+<a href=\h><button>secondhand left</button></a>
+<a href=\i><button>secondhand right</button></a><br/>
+<a href=\j><button>thirdhand left</button></a>
+<a href=\k><button>thirdhand right</button></a><br/>
+<a href=\l><button>forthhand left</button></a>
+<a href=\m><button>forthhand right</button></a><br/>
+<a href=\n><button>cutter left</button></a>
+<a href=\o><button>cutter right</button></a><br/>
+<form method="post" action="{{ url_for('tasks') }}">
+<input type="submit" value="Capture" name="click"/>
+</form>
+<img src="{{ url_for('video_feed') }}" height="80%">
+</html>
